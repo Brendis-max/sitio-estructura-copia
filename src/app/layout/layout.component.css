@@ -1,0 +1,171 @@
+/* .topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.brand
+{
+    font-weight: 700;
+}
+
+.menu a{
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 6px 10px;
+
+}
+
+.menu a.active{
+    font-weight: 700;
+    border: 1px solid #333;
+}
+
+.content{
+    padding: 16px;
+}
+.footer{
+    padding: 12px 16px;
+    border-top: 1px solid #ddd;
+} */
+
+/* HEADER */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 24px;
+  /* background: #ffffff; */
+
+ 
+}
+
+/* BRAND */
+.brand {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0d6efd; /* azul */
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  gap: 16px;
+
+  padding: 8px 16px;
+  background: #e9f4ff;
+  border-radius: 999px;
+
+  box-shadow: 0 6px 16px rgba(13, 110, 253, 0.15);
+}
+
+/* LINKS */
+.menu a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  color: #0d6efd;
+  padding: 6px 14px;
+  border-radius: 999px;
+
+  transition: all 0.25s ease;
+}
+
+/* HOVER */
+.menu a:hover {
+  background: #31b4db;
+  color: #ffffff;
+}
+
+/* ACTIVO */
+.menu a.active {
+  background: #0d6efd;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.35);
+}
+
+/* FORM SEARCH */
+.topbar form {
+  display: flex;
+  align-items: center;
+  
+  box-shadow: 0 6px 16px rgba(13, 110, 253, 0.15);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 12px;
+  background: #f8f9fa;
+  color: #0d6efd;
+  font-size: 0.85rem;
+}
+/* SEARCH FORM */
+.topbar form {
+  background:#fff;
+  padding: 6px;
+  border-radius: 999px;
+
+ 
+
+  gap: 6px;
+}
+
+/* INPUT */
+.topbar input.form-control {
+  border: none;
+  outline: none;
+
+  padding: 6px 14px;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  color: #0d6efd;
+
+  background: transparent;
+}
+
+/* Placeholder */
+.topbar input::placeholder {
+  color: #6c9cff;
+}
+
+/* FOCUS */
+.topbar input:focus {
+  box-shadow: none;
+}
+
+/* BUTTON */
+.topbar button {
+  border-radius: 999px;
+  padding: 6px 14px;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  background: #0d6efd;
+  border: none;
+  color: #ffffff;
+
+  transition: all 0.25s ease;
+}
+
+/* BUTTON HOVER */
+.topbar button:hover {
+  background: #0b5ed7;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.4);
+}
+
+/* BUTTON ACTIVE */
+.topbar button:active {
+  transform: scale(0.96);
+}

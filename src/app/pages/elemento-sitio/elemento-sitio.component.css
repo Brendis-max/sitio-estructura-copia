@@ -1,0 +1,18 @@
+.hero {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f0f4f8;
+}
+
+.information {
+  margin: 3rem;
+  padding: 0 1.5rem;
+}
+
+.information p {
+  color: #4b5563;
+}
+
+.information h2 {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,99 @@
+*{
+   font-family: "Google Sans", sans-serif; 
+}
+/* Efecto hover suave en cada resultado */
+.hover-bg-light {
+  transition: background-color 0.2s ease;
+}
+
+.hover-bg-light:hover {
+  background-color: rgba(13, 110, 253, 0.05); /* azul muy claro */
+}
+
+/* Limita la descripción a 2 líneas y pone puntos suspensivos */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* CONTENEDOR GENERAL */
+.container {
+  max-width: 850px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* TÍTULO */
+h2 {
+  text-align: center;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+/* TARJETAS */
+.card {
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* ESPACIADO INTERNO */
+.card-body {
+  padding: 25px;
+}
+
+/* INPUT GROUP */
+.input-group input {
+  border-radius: 12px 0 0 12px;
+  padding: 12px;
+  font-size: 15px;
+}
+
+.input-group button {
+  padding: 12px 18px;
+  font-weight: 600;
+}
+
+/* BOTONES */
+.btn-primary {
+  border-radius: 0;
+}
+
+.btn-outline-secondary {
+  border-radius: 0 12px 12px 0;
+}
+
+/* SELECTS */
+select.form-select {
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 15px;
+}
+
+/* LABELS */
+.form-label {
+  font-weight: 600;
+  color: #34495e;
+}
+
+/* TEXTO DE AYUDA */
+small.text-muted {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+/* SEPARACIÓN ENTRE BLOQUES */
+.card.mb-3 {
+  margin-bottom: 25px !important;
+}

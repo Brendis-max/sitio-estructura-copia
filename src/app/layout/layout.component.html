@@ -1,0 +1,34 @@
+<header class="topbar">
+  <div class="brand"> Sitio-Estructura </div>
+  
+  <nav class="menu">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a>
+    <a routerLink="/breadcrumbs" routerLinkActive="active">Breadcrumbs</a>
+    <a routerLink="/elemento-sitio" routerLinkActive="active">Elementos</a>
+    <a routerLink="/menu" routerLinkActive="active">Menú</a>
+    <a routerLink="/mapa-sitio" routerLinkActive="active">Mapa del Sitio</a>
+    <a routerLink="/busqueda" routerLinkActive="active"> Busqueda</a>   
+  </nav>
+
+  <form class="d-flex ms-3" (submit)="$event.preventDefault(); goSearch()">
+    <input
+class="form-control form-control-sm m-2"
+placeholder="Buscar.."
+[(ngModel)]="quickQuery"
+name="quickQuery"
+    >
+
+    <button class="btn btn-sm btn-primary" type="submit">Ir </button>
+    </form>
+</header>
+
+
+<app-breadcrumb></app-breadcrumb>
+
+<main class="content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="footer">
+  <small>Desarrollo web profesional</small>
+</footer>

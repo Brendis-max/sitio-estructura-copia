@@ -1,0 +1,36 @@
+.hero {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f0f4f8;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  color: #666;
+  margin: 1rem;
+}
+
+.intro {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.intro p {
+  color: #4b5563;
+  }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  border-style: groove;
+  padding: 1.5rem;
+  text-align: center;
+}
